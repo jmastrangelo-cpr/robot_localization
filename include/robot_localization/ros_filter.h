@@ -453,6 +453,10 @@ template<class T> class RosFilter
     //!
     bool publishTransform_;
 
+    //! @brief Whether we're publishing the the inverse transfrom, ie. base_link_frame->world_frame transform
+    //!
+    bool invertTransform_;
+
     //! @brief Whether to reset the filters when backwards jump in time is detected
     //!
     //! This is usually the case when logs are being used and a jump in the logi
